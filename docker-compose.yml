@@ -1,0 +1,10 @@
+services:
+  telegram-bot:
+    build: .
+    container_name: telegram-bot
+    environment:
+      TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN}
+      PLANNER_DB_PATH: /data/planner.db
+    volumes:
+      - ./data:/data
+    restart: unless-stopped

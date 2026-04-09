@@ -1,0 +1,18 @@
+# Build
+bin/
+obj/
+build_verify/
+
+# IDE
+.vs/
+*.user
+*.suo
+
+# Environment
+.env
+
+# Database
+data/
+*.db
+*.db-shm
+*.db-wal
